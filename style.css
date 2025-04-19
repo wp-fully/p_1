@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size: 10px;
+  }
+  
+:root {
+    --paragraph-color: #787878;
+    --btn-bg: #015fc9;
+    --bg-color: #16243d;
+    --white: #ffffff;
+    --black: #000000;
+    --h1-size: 48px;
+    --h2-size: 48px;
+    --h-size: 24px;
+    --paragraph-size-: 18px;
+}
+h1{font-size: var(--h1-size);}
+h2{font-size: var(--h2-size);}
+h3{font-size: var(--h-size);}
+p{font-size: var(--paragraph-size-);color: var(--paragraph-color);}
+a{text-decoration: none;}
+li{list-style: none;}
+.container{
+    width: 95%;
+    max-width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 32px;
+}
+.p-t{padding-top: 60px;}
+section{
+    position: relative;
+}
+section::before{
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: var(--bg-color);
+    z-index: -1;
+}
+
+aside{
+    background-color: var(--bg-color);
+    color: var(--white);
+}
+aside p{color: var(--white);}
+.image-box{
+    background-color: #f2f5f9;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 32px;
+}
+.content p {margin-block: 20px;}
+
+  /* ===============================
+     4. Media Queries
+  ================================= */
+  
+  /* 🟡 Tablet*/
+  @media (max-width: 991px) {
+
+  }
+  
+  /* 🔴 Mobile*/
+  @media (max-width: 767px) {
+
+  }
+  
